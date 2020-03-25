@@ -1,0 +1,682 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: left;
+  background-image: url(../img/fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteiner-rigt {
+  max-width: 900px;
+}
+
+/* ......................Левая панель.....................  */
+
+.left-panel {
+  max-width: 300px;
+  width: 35%;
+  background-color: #111111;
+}
+
+.left-panel__photo {
+  max-width: 100%;
+}
+
+.left-panel__kontact {
+  padding: 0;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.left-panel__kontact-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #459a35;
+}
+
+.left-panel__kontact-desc {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.left-panel__kontact-desc--mail a {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.left-panel__kontact-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.left-panel__kontact-social--viber,
+.left-panel__kontact-social--telegram,
+.left-panel__kontact-social--skype {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.left-panel__kontact-social--viber svg,
+.left-panel__kontact-social--telegram svg,
+.left-panel__kontact-social--skype svg {
+  display: inline-block;
+  fill: #459a35;
+  transition: fill 200ms linear;
+}
+
+.left-panel__kontact-social--viber:hover svg,
+.left-panel__kontact-social--telegram:hover svg,
+.left-panel__kontact-social--skype:hover svg {
+  fill: #ffffff;
+}
+
+.left-panel__skils {
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+/* ........................Правая панель............................  */
+
+.right-panel {
+  max-width: 1200px;
+  width: 65%;
+  min-width: 375px;
+  background-color: #111111;
+}
+
+.right-panel__name {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.2;
+  color: #ffffff;
+  padding-left: 20px;
+  margin: 30px 0 0;
+}
+
+.right-panel__prof {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 20px;
+  margin: 0 0 20px 0;
+}
+
+/* ........................About Me............................  */
+
+.right-panel__about {
+  position: relative;
+  background-image: url(../img/bg.jpg);
+  background-size: contain;
+  padding-top: 10px;
+}
+
+.right-panel__header--scrin {
+  position: absolute;
+  display: inline-block;
+  width: 96.8%;
+  padding-right: 100px;
+  background-size: contain;
+  background-image: url(../img/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(25px, -25px);
+  z-index: 50;
+}
+
+.right-panel__header--name {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.right-panel__about_desc {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px; 
+}
+
+
+
+.carousel-control-prev-icon {
+  background-image: url(../img/icon/arrow-left.png);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/icon/arrow-right.png);
+}
+
+.right-panel__about-skils {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px 0 10px;
+  margin: 20px 0 0 0;
+}
+
+.right-panel__skil-img {
+  width: 80px;
+  height: 80px;
+  border: 5px #459a35 solid;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-panel__skil-img--html {
+  background-image: url(../img/icon/html.png);
+  background-size: 50%, contain;
+}
+
+.right-panel__skil-img--css {
+  background-image: url(../img/icon/css.png);
+  background-size: 45%, contain;
+}
+
+.right-panel__skil-img--javascript {
+  background-image: url(../img/icon/javascript.png);
+  background-size: 50%, contain;
+}
+
+.right-panel__skil-img--ps {
+  background-image: url(../img/icon/photoshop.png);
+  background-size: 60%, contain;
+}
+
+.right-panel__skil-img--git {
+  background-image: url(../img/icon/git.png);
+  background-size: 70%, contain;
+}
+
+.right-panel__skil-img--bt {
+  background-image: url(../img/icon/bootstrap.png);
+  background-size: 50%, contain;
+}
+
+.right-panel__skil-level {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 10px 0 30px 0;
+  
+}
+
+.right-panel__skil-level--plus {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+
+.right-panel__skil-level--minus {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px #ffffff solid;
+  border-radius: 50%;
+}
+
+/* ........................Experience............................ */
+
+.experience {
+  position: relative;
+}
+
+.right-panel__experience--scrin {
+  position: absolute;
+  display: inline-block;
+  max-width: 900px;
+  width: 96.8%;
+  background-image: url(../img/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(25px, -15px);
+  z-index: 50;
+}
+
+.right-panel__experience {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-panel__experience-left,
+.right-panel__experience-right {
+  width: 45%;
+  margin-bottom: 50px;
+  padding: 30px 0 0 30px;
+}
+
+.data {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.position {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #459a35;
+}
+
+.workplace {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 156x;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.work-desc {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #65605e;
+}
+
+.data,
+.position,
+.workplace,
+.work-desc {
+  margin: 10px 0 0 0;
+}
+
+/* ........................Education............................  */
+
+.right-panel__education {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../img/bg.jpg);
+}
+
+.right-panel__education--scrin {
+  position: absolute;
+  display: inline-block;
+  max-width: 900px;
+  width: 97.3%;
+  background-image: url(../img/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(10px, -15px);
+  z-index: 50;
+}
+
+.right-panel__education-left,
+.right-panel__education-right {
+  width: 45%;
+  margin-bottom: 40px;
+  padding: 30px 0 0 30px;
+}
+
+/* ........................Examples............................ */
+
+.right-panel__examples {
+  position: relative;
+}
+
+.right-panel__examples--scrin {
+  position: absolute;
+  display: inline-block;
+  max-width: 900px;
+  width: 96.7%;
+  background-image: url(../img/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(25px, -15px);
+  z-index: 50;
+}
+
+.right-panel__examples-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 50px 0;
+  padding: 40px 0 0 20px;
+}
+
+.right-panel__examples-work {
+  display: inline-block;
+  width: 150px;
+  border: 5px #459a35 solid;
+  border-radius: 5px;
+  transition: border 200ms linear;
+}
+
+.right-panel__examples-work:hover,
+.right-panel__examples-work:focus {
+  border-color: #fff;
+}
+
+.right-panel__examples-work img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ........................HOBI............................ */
+
+.right-panel__hobi {
+  position: relative;
+  background-image: url(../img/bg.jpg);
+  background-size: contain;
+}
+
+.right-panel__hobi--scrin {
+  position: absolute;
+  display: inline-block;
+  max-width: 900px;
+  width: 96.7%;
+  background-image: url(../img/shape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(25px, -15px);
+  z-index: 50;
+}
+
+.right-panel__hobi-dzen {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.right-panel__hobi-dzen--desk {
+  display: inline-block;
+  margin: auto 0;
+  padding-left: 60px;
+  padding-right: 20px;
+  width: 50%;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: justify;
+}
+.right-panel__hobi-dzen-gif {
+  display: inline-block;
+  width: 50%;
+  height: 136px;
+  display: inline-block;
+  width: 40%;
+  border: 5px #459a35 solid;
+  border-radius: 5px;
+  transition: border 200ms linear;
+  background-image: url(../img/logo-comics.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-panel__hobi-dzen-gif:hover,
+.right-panel__hobi-dzen-gif:focus {
+  border-color: #ffffff;
+}
+
+.right-panel__hobi-list {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.right-panel__hodi-punk {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 40px 0 0 0;
+}
+
+.right-panel__hodi-punk--travel,
+.right-panel__hodi-punk--movies,
+.right-panel__hodi-punk--music,
+.right-panel__hodi-punk--games,
+.right-panel__hodi-punk--chess {
+  margin: 40px 0 0 0;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.right-panel__hodi-punk--travel {
+  background-image: url(../img/icon/fly.png);
+}
+
+.right-panel__hodi-punk--movies {
+  background-image: url(../img/icon/movie.png);
+}
+
+.right-panel__hodi-punk--music {
+  background-image: url(../img/icon/music.png);
+}
+.right-panel__hodi-punk--games {
+  background-image: url(../img/icon/game.png);
+}
+
+.right-panel__hodi-punk--chess {
+  background-image: url(../img/icon/chess.png);
+}
+
+.right-panel__hobi-list--name {
+  margin-bottom: 20px;
+}
+
+.right-panel__homi-name {
+  width: 80px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.right-panel__kontact-social {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.right-panel__kontact-social--viber,
+.right-panel__kontact-social--telegram,
+.right-panel__kontact-social--skype {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.right-panel__kontact-social--viber svg,
+.right-panel__kontact-social--telegram svg,
+.right-panel__kontact-social--skype svg {
+  display: inline-block;
+  fill: #459a35;
+  transition: fill 200ms linear;
+}
+
+.right-panel__kontact-social--viber:hover svg,
+.right-panel__kontact-social--telegram:hover svg,
+.right-panel__kontact-social--skype:hover svg {
+  fill: #ffffff;
+}
+
+.left-panel__skils {
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+@media (max-width: 700px) {
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel__examples-work {
+    margin-left: 5px;
+  }
+
+  .right-panel__hobi-dzen {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .right-panel__hobi-dzen--desk {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  .right-panel__hobi-dzen-gif {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .right-panel__experience--scrin {
+    transform: translate(25px, -25px);
+  }
+
+  .right-panel__education--scrin {
+    transform: translate(20px, -15px);
+  }
+
+  .right-panel__skil-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-panel__skil-level--plus,
+  .right-panel__skil-level--minus {
+    width: 6px;
+    height: 6px;
+  }
+
+  .right-panel {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .right-panel__experience--scrin p {
+    padding: 10px;
+  }
+
+  .right-panel__header--name {
+    font-size: 14px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 60px;
+    height: 60px; 
+  }
+
+  .right-panel__header--scrin,
+  .right-panel__experience--scrin,
+  .right-panel__education--scrin,
+  .right-panel__examples--scrin,
+  .right-panel__hobi--scrin {
+    background-size: contain;
+  }
+
+  .right-panel__hodi-punk--travel,
+  .right-panel__hodi-punk--movies,
+  .right-panel__hodi-punk--music,
+  .right-panel__hodi-punk--games,
+  .right-panel__hodi-punk--chess {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right-panel__homi-name {
+    font-size: 10px;
+  }
+
+  .right-panel__hobi-list {
+    padding: 0;
+  }
+
+  .right-panel__kontact-social {
+    display: flex;
+  }
+}

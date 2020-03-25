@@ -1,0 +1,361 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*......................... Навигация сайта /*.........................*/
+
+nav {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.site-nav {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 36px 0 0 0;
+    width: 490px;
+    margin: 0;
+}
+
+.site-logo {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #95e1d3;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.nav-punkt a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #95e1d3;
+    text-transform: uppercase;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.nav-punkt a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: none;
+}
+
+.nav-punkt:hover a {
+    color: #f38181;
+}
+
+.nav-punkt:hover a::after {
+    content: "";
+    background-color: #f38181;
+}
+
+
+/*..................Заголовок первог раздела /*..................*/
+
+.work-name {
+    margin: 130px 0 0 0;
+    padding: 0;
+}
+
+.work-name::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 32px auto 0;
+}
+
+.work-name .name-desc {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333333;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.work-name .name-block {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 78px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+
+/* .........................Меню сайта .........................*/
+
+.work-list {
+    display: flex;
+    height: 310px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+.list-punkt {
+    flex-basis: 33.3%;
+    padding: 0 0 0 90px;
+}
+
+.punkt-name {
+    margin: 0 0 18px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.punkt-name::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    transform: translate(-65px, 100%);
+}
+
+.icon-clock::before {
+    background: url(../img/icons/icon-1.png);
+}
+
+.icon-line::before {
+    background: url(../img/icons/icon-2.png);
+}
+
+.icon-monitor::before {
+    background: url(../img/icons/icon-3.png);
+}
+
+.icon-flag::before {
+    background: url(../img/icons/icon-4.png);
+}
+
+.icon-hous::before {
+    background: url(../img/icons/icon-5.png);
+}
+
+.icon-border::before {
+    background: url(../img/icons/icon-6.png);
+}
+
+.punkt-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+
+/*.................... Третий блок заголовок....................  */
+
+main .work-name {
+    margin: 60px auto 0;
+}
+
+.block-description {
+    padding: 0 130px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.block-description {
+    margin: 48px auto 0;
+}
+
+
+/* ...................... Анкеты работников ...................... */
+
+.person-list {
+    display: flex;
+    height: 624px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 88px;
+}
+
+.rerson-card {
+    flex-basis: 33.3%;
+    padding: 0;
+    margin: 0;
+}
+
+.person-foto {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+}
+
+.overlay-card {
+    display: block;
+    position: absolute;
+    padding: 0;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient( to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+    opacity: 0;
+    transition: transform 0.2s ease-in;
+    z-index: 10;
+}
+
+.person-img {
+    transition: transform 0.2s ease-in;
+}
+
+.person-foto:hover .person-img,
+.person-foto:hover .overlay-card {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+
+.overlay-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 470px;
+}
+
+.overlay-list li {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce38a;
+}
+
+.icon-facebook:hover,
+.icon-twitter:hover,
+.icon-pinterest:hover,
+.icon-instagram:hover {
+    background-color: #95e1d3;
+    cursor: pointer;
+}
+
+.persone-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.person-prof {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    height: 64px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.site-info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    height: 40px;
+    width: 230px;
+    border: 1px solid rgb(231, 231, 231);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    line-height: 40px;
+    color: #cccccc;
+}
+
+.email:focus {
+    color: #000000;
+}
+
+.send-mail {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0;
+    cursor: pointer;
+    background-color: #95e1d3;
+}
+
+.site-info a:hover {
+    color: #f38181;
+}

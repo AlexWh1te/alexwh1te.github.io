@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+  header {
+    padding-top: 40px;
+    height: 700px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo,
+  .logo:hover {
+    margin-top: 0;
+  }
+
+  .title {
+    margin-top: 160px;
+  }
+
+  .title h2 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .title p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .title button {
+    width: 226px;
+  }
+
+  .partner {
+    max-width: 100%;
+  }
+
+  .partner-1,
+  .partner-3 {
+    margin-left: 33.333%;
+  }
+
+  .partner-2,
+  .partner-4 {
+    margin-right: 33.333%;
+  }
+
+  .button-2 button {
+    width: 196px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo,
+  .logo:hover {
+    text-align: left;
+  }
+
+  .menu {
+    text-align: right;
+  }
+
+  .partner-1,
+  .partner-3 {
+    margin-left: 0;
+  }
+
+  .partner-2,
+  .partner-4 {
+    margin-right: 0;
+  }
+}
